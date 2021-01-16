@@ -3,10 +3,7 @@ package com.arllain.fruitlist
 import android.content.Intent
 import android.os.Bundle
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
-import android.view.Menu
-import android.view.MenuItem
 
 class MainActivity : AppCompatActivity() {
 
@@ -15,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setSupportActionBar(findViewById(R.id.toolbar))
 
-        findViewById<FloatingActionButton>(R.id.fab).setOnClickListener { view ->
+        findViewById<FloatingActionButton>(R.id.fabAddFruit).setOnClickListener { view ->
             val addFruitActivity = Intent(this, AddFruitActivity::class.java)
             startActivity(addFruitActivity)
         }
